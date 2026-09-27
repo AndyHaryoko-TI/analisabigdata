@@ -12,11 +12,7 @@ import Steps from './components/Steps';
 import Table from './components/Table';
 import Build from './deck/Build';
 import CountUp from './components/CountUp';
-
-// Mock charts for Bolt Slides
-import BarChart from './components/BarChart';
-import LineChart from './components/LineChart';
-import DonutChart from './components/DonutChart';
+import { BarChart, LineChart, DonutChart } from './components/Charts';
 
 export default function App() {
   return (
@@ -138,17 +134,10 @@ export default function App() {
       <Slide nav="Distribusi Kategori">
         <Reveal><h2 className="headline" style={{ textAlign: 'center' }}>Proporsi <span className="accent-text">Kategori Produk</span></h2></Reveal>
         <Reveal>
-          <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 0' }}>
-            <DonutChart
-              data={[
-                { label: 'Mobiles & Tablets', value: 35 },
-                { label: 'Appliances', value: 20 },
-                { label: 'Men Fashion', value: 15 },
-                { label: 'Women Fashion', value: 12 },
-                { label: 'Computing', value: 8 },
-              ]}
-              title="Top 5 Kategori"
-            />
+          <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 0', gap: '40px' }}>
+            <DonutChart value={35} label="Mobiles & Tablets" />
+            <DonutChart value={20} label="Appliances" />
+            <DonutChart value={15} label="Men Fashion" />
           </div>
         </Reveal>
         <Build at={1}>
@@ -164,7 +153,7 @@ export default function App() {
         flip
         kicker="Histogram"
         title={<>Sebaran <span className="accent-text">Kuantitas & Harga</span></>}
-        body="Analisis distribusi menggunakan histogram dengan garis KDE memperlihatkan skewness ekstrem ke kanan (Right Skewed), yang lazim pada data finansial."
+        body="Analisis distribusi memperlihatkan skewness ekstrem ke kanan (Right Skewed), yang lazim pada data finansial."
         media={
           <>
             <div style={{ position: 'absolute', inset: 0, background: 'var(--surface-sunken)' }} />
@@ -239,7 +228,6 @@ export default function App() {
                 { label: 'Men Fashion', value: 25000 },
                 { label: 'Women Fashion', value: 20000 },
               ]}
-              horizontal
             />
           </div>
         </Reveal>
@@ -255,16 +243,7 @@ export default function App() {
         <Reveal><h2 className="headline" style={{ textAlign: 'center' }}>Laju Transaksi <span className="accent-text">Bulanan</span></h2></Reveal>
         <Reveal>
           <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 0' }}>
-            <LineChart
-              data={[
-                { label: 'Jan', value: 2000 },
-                { label: 'Feb', value: 2500 },
-                { label: 'Mar', value: 3100 },
-                { label: 'Apr', value: 2800 },
-                { label: 'May', value: 4500 },
-                { label: 'Jun', value: 4200 },
-              ]}
-            />
+            <LineChart points={[2000, 2500, 3100, 2800, 4500, 4200, 4600, 5200]} height={300} />
           </div>
         </Reveal>
         <Build at={1}>
@@ -321,7 +300,7 @@ export default function App() {
           Eksplorasi Data Awal (EDA) telah berhasil mengungkap struktur, memetakan anomali, serta membongkar korelasi krusial pada transaksi retail e-commerce. Kita kini memiliki pemahaman logistik dan finansial yang kokoh.
         </p>
         <div style={{ marginTop: 40, padding: '20px 40px', background: 'var(--accent)', color: 'var(--bg)', borderRadius: 30, display: 'inline-block', fontWeight: 'bold', fontSize: 24 }}>
-          Maju ke Pemodelan Prediktif & Segmentasi Pelanggan 🚀
+          Pemodelan Prediktif & Segmentasi Pelanggan 🚀
         </div>
       </Slide>
 
