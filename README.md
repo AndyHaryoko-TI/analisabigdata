@@ -6,8 +6,10 @@ Repositori ini berisi kumpulan materi presentasi interaktif dan *source code* an
 ---
 
 ## 💾 Dataset Rujukan
-Seluruh eksperimen dan analisis dalam modul ini bertumpu pada Dataset Transaksi Ritel (*Retail Transaction Dataset*). Anda dapat mengunduh format mentah data tersebut di tautan Kaggle berikut:
-👉 **[Dataset_Transaction_Retail.csv (Kaggle)](https://www.kaggle.com/code/ismadiandamara/retail-transaction-analysis?select=Dataset_Transaction_Retail.csv)**
+Seluruh eksperimen dan analisis dalam modul ini bertumpu pada Dataset Transaksi Ritel (*Retail Transaction Dataset*). Anda dapat menggunakan dataset yang telah kami sediakan langsung di repositori ini:
+👉 **[Dataset_Transaction_Retail.csv (Repositori)](https://github.com/AndyHaryoko-TI/analisabigdata/blob/main/Dataset_Transaction_Retail.csv)**
+
+*(Sebagai referensi alternatif, sumber asli mentah dataset ini juga dapat diunduh di tautan Kaggle berikut: [Dataset Kaggle](https://www.kaggle.com/code/ismadiandamara/retail-transaction-analysis?select=Dataset_Transaction_Retail.csv))*
 
 ---
 
