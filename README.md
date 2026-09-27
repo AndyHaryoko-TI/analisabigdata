@@ -13,6 +13,12 @@ Seluruh eksperimen dan analisis dalam modul ini bertumpu pada Dataset Transaksi 
 
 ---
 
+## 📋 Lembar Kerja Mahasiswa (LKM)
+Untuk keperluan praktikum di laboratorium, asisten atau mahasiswa dapat mengunduh dokumen resmi LKM berformat Microsoft Word (.docx) di sini:
+👉 **[Unduh LKM EDA Analisa Big Data](https://github.com/AndyHaryoko-TI/analisabigdata/raw/main/LKM_EDA_Analisa_Big_Data.docx)**
+
+---
+
 ## 📚 Daftar Modul & Tautan Presentasi Interaktif
 Modul disusun secara berurutan, mulai dari pemahaman awal kualitas data hingga perancangan model strategi rantai pasok (SCM) dan pemasaran (CRM).
 
